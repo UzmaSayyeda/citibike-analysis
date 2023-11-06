@@ -49,8 +49,29 @@ Here is a map showing the end stations:
 - Overall, classic bikes have the highest number, accounting for 77.83%, followed by electric bikes, which constitute 21.6%, and lastly docked bikes.  
 
 ### Analysis:
+#### Stations
 - Let's dive deep and understand any noticeable trends and interesting data discoveries.  
 - Here is a dashboard comapring start and end stations:
     ![Stations Dashboard](./images/StationsDashboard.png)  
-- The above dashboard 
-    
+- The dashboard above displays the most popular stations for August 2022. Below the maps, there's a bar plot that shows the top 5 stations per month, grouped by year.
+- from the map we can see that the end stations have a higher frequency of rides than start stations, while in terms of popularity the Midtown Manhattan is the most popular. Many people might use it to commute. 
+- When we look at the bar plots comapring years, its evident that in the month of August, the most popular start station was 1 Ave & E 68 St and all the start station performed better for the year 2022.
+- For the end stations, 3 performed better for the year 2022 and the top performing station was also 1 Ave & E 68 St.
+#### Users
+- Lets look at our users and their distribution
+![User Distribution](./images/userdistribution.png)
+- In our dataset, 80.49% of users are members and 19.51% are casual.
+![User Dashboard](./images/userdashboard.png)
+- We also have a dashboard to analyze users.
+- With this dashboard we can determine that the most popular weekday among users is wednesday, the most popular day for August 2022 was the 20th , and the most popular hours was 5 pm.
+- There is also an upward trend for both causal users and members.
+#### Bike Type
+![Bike Distribution](./images/bikedustribution.png)
+![Bike Dashbaord](./images/bikedashbaord.png)
+- The most popular bike type is the classic bike but this could also be due to the fact that they are the highest in number accounting for 77.83% of the total bikes.
+
+### Conclusions:
+In this analysis we looked at the August 2022, based on these obervations we can conclude that
+- There is a trend of higher frequency in more urban areas possibly due to users commuting which also coincides with a higher traffic at around 5 pm.
+- This can be observed in a heatmap plotted with time against weekdays.
+![Heatmap Time vs Weekdays](./images/heatmap.png)
