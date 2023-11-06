@@ -4,6 +4,15 @@
 [The New York Citi](https://en.wikipedia.org/wiki/Citi_Bike) Bike program is the largest bike-sharing program in the United States. The main objective of this project is to generate regular reports for city officials to help promote and enhance the program.
 
 Since 2013, the Citi Bike program has established a reliable infrastructure for capturing data on the program's usage. Every month, data on the bikes is collected, organized, and made available on the [Citi Bike Data](https://citibikenyc.com/system-data) webpage. However, while the data is consistently updated, the team has yet to develop a dashboard or a sophisticated reporting system. As a result, city officials have inquiries about the program, and the first task is to create a set of data reports that can provide the necessary answers.
+The link to the Tableau workbook can  be found [here](https://public.tableau.com/views/2022_2023_citibike/Citibike-Analysis?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)  
+
+
+## Data Processing
+- The CSV files were downloaded from the [Citi Bike Data](https://s3.amazonaws.com/tripdata/index.html).
+- I downloaded 21 different files acoounting for each month for the years 2022 and 2023, cleaned and created a subset of the datasets since they are large and Tableau restricts data file size to 1GB. 
+- These csvs were then combined based on year using `concat` and then exported as csvs to be used in Tableau.
+- For data visualization in Tableau, the two cleaned and merged CSVs were combined using the union feature.
+
 
 ## Requirements
 ### Map 
