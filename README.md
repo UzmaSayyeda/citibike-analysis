@@ -9,7 +9,7 @@ The link to the Tableau workbook can  be found [here](https://public.tableau.com
 
 ## Data Processing
 - The CSV files were downloaded from the [Citi Bike Data](https://s3.amazonaws.com/tripdata/index.html).
-- I downloaded 21 different files acoounting for each month for the years 2022 and 2023, cleaned and created a subset of the datasets since they are large and Tableau restricts data file size to 1GB. 
+- I downloaded 21 different files accounting for each month for the years 2022 and 2023, cleaned and created a subset of the datasets since they are large and Tableau restricts data file size to 1GB. 
 - These csvs were then combined based on year using `concat` and then exported as csvs to be used in Tableau.
 - For data visualization in Tableau, the two cleaned and merged CSVs were combined using the union feature.
 
@@ -36,12 +36,12 @@ The link to the Tableau workbook can  be found [here](https://public.tableau.com
 ### Analysis 
 - Analysis is written in a markdown file or included in the Tableau Public workbook
 - Analysis describes the dashboards and any interesting data discoveries contained within them
-- Analysis on the chosen city official requested map detailing any noticeable trends
+- Analysis of the chosen city official requested map detailing any noticeable trends
 - The written analysis references specific visualizations and interactive features
 - The document is written in a manner that a non-technical reader could understand.  
 
 ### Map:
-- Lets begin analysis by examining the distribution  of all stations in our dataset.
+- Let's begin the analysis by examining the distribution  of all stations in our dataset.
 ![All Stations](./images/stations.png)   
 - We have a total of 3892 stations, 1950 of which are end stations and 1942 are start stations.    
 Here is a map showing the end stations:   
@@ -60,27 +60,27 @@ Here is a map showing the end stations:
 ### Analysis:
 #### Stations
 - Let's dive deep and understand any noticeable trends and interesting data discoveries.  
-- Here is a dashboard comapring start and end stations:
+- Here is a dashboard comparing start and end stations:
     ![Stations Dashboard](./images/StationsDashboard.png)  
 - The dashboard above displays the most popular stations for August 2022. Below the maps, there's a bar plot that shows the top 5 stations per month, grouped by year.
-- from the map we can see that the end stations have a higher frequency of rides than start stations, while in terms of popularity the Midtown Manhattan is the most popular. Many people might use it to commute. 
-- When we look at the bar plots comapring years, its evident that in the month of August, the most popular start station was 1 Ave & E 68 St and all the start station performed better for the year 2022.
-- For the end stations, 3 performed better for the year 2022 and the top performing station was also 1 Ave & E 68 St.
+- from the map we can see that the end stations have a higher frequency of rides than the start stations, while in terms of popularity, Midtown Manhattan is the most popular. Many people might use it to commute. 
+- When we look at the bar plots comparing years, it's evident that in August, the most popular start station was 1 Ave & E 68 St and all the start stations performed better for the year 2022.
+- For the end stations, 3 performed better for the year 2022 and the top performing station was 1 Ave & E 68 St.
 #### Users
-- Lets look at our users and their distribution
+- Let's look at our users and their distribution
 ![User Distribution](./images/userdistribution.png)
 - In our dataset, 80.49% of users are members and 19.51% are casual.
 ![User Dashboard](./images/userdashboard.png)
 - We also have a dashboard to analyze users.
-- With this dashboard we can determine that the most popular weekday among users is wednesday, the most popular day for August 2022 was the 20th , and the most popular hours was 5 pm.
+- With this dashboard, we can determine that the most popular weekday among users is Wednesday, the most popular day for August 2022 was the 20th, and the most popular hour was 5 p.m.
 - There is also an upward trend for both causal users and members.
 #### Bike Type
 ![Bike Distribution](./images/bikedustribution.png)
 ![Bike Dashbaord](./images/bikedashbaord.png)
-- The most popular bike type is the classic bike but this could also be due to the fact that they are the highest in number accounting for 77.83% of the total bikes.
+- The most popular bike type is the classic bike but this could also be because they are the highest in number accounting for 77.83% of the total bikes.
 
 ### Conclusions:
-In this analysis we looked at the August 2022, based on these obervations we can conclude that
+In this analysis we looked at August 2022, based on these observations we can conclude that
 - There is a trend of higher frequency in more urban areas possibly due to users commuting which also coincides with a higher traffic at around 5 pm.
 - This can be observed in a heatmap plotted with time against weekdays.
 ![Heatmap Time vs Weekdays](./images/heatmap.png)
